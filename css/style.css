@@ -114,3 +114,19 @@ header .navegation li a{
 .boxImg img{
     width: 700px;
 }
+
+.form {
+    margin-top: 150px;
+}
+
+.form h1 {
+    color: #fff;
+}
+
+.form-group {
+    color: #fff;
+}
+
+.form button {
+    margin-top: 20px;
+}
