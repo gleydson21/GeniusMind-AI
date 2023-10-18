@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html {
+    /* font-size: 62.5%; */
+}
+
 section{
     position: relative;
     width: 100%;
@@ -101,7 +106,7 @@ header .navegation li a{
     text-decoration: none;
     color: #fff;
 }
-.content .text .button-red:hover{
+.button-red:hover{
     transform: translateY(-10px);
 }
 .icons{
@@ -124,6 +129,7 @@ header .navegation li a{
 
 .form {
     margin-top: 150px;
+    width: 700px;
 }
 
 .form h1 {
@@ -132,6 +138,8 @@ header .navegation li a{
 
 .form-group {
     color: #fff;
+    margin-bottom: 20px;
+
 }
 
 .form button {
