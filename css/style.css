@@ -82,7 +82,7 @@ header .navegation li a{
 .content .text p{
     color: #fff;
 }
-.content .text a{
+.button-red{
     display: inline-block;
     margin-top: 50px;
     padding: 10px 25px;
@@ -93,8 +93,15 @@ header .navegation li a{
     text-decoration: none;
     border-radius: 40px;
     transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
 }
-.content .text a:hover{
+
+.button-red a {
+    text-decoration: none;
+    color: #fff;
+}
+.content .text .button-red:hover{
     transform: translateY(-10px);
 }
 .icons{
