@@ -80,6 +80,21 @@ header .navegation li a{
     line-height: 2.5em;
     font-weight: 700;
 }
+.content .text h3{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+.content .text h4{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
 .content .text h2 span{
     font-size: 2.5em;
     color: #e51e2a;
