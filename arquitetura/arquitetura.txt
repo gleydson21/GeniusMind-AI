@@ -1,0 +1,26 @@
+- backend/
+    - app/
+        - __init__.py
+        - routes.py
+        - models.py (se houverem modelos definidos)
+    - config/
+        - __init__.py
+        - config.py
+    - main.py
+- frontend/
+    - css/
+        - style.css
+    - img/
+        - download-removebg-preview.png
+        - estudantes-dos-desenhos-animados-adolescente-casal-com-mochilas-e-livros-700-76285323-removebg-preview.png
+        - logo_lamp.png
+        - png-clipart-graphics-computer-student-computer-child-computer-removebg-preview.png
+        - universidade-tiradentes-logo-removebg-preview.png
+    - js/
+        - api/
+            - userApi.js
+            - postApi.js
+        - components/
+            
+        - main.js
+- index.html
