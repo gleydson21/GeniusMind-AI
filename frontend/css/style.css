@@ -8,9 +8,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    /*font-size: 62.5%; */
-}
+/*html {
+    font-size: 62.5%; 
+}*/
 
 section {
     position: relative;
@@ -186,7 +186,7 @@ footer {
     min-height: 5%;
 }
 
-.container {
+.container-footer  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
