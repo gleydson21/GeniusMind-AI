@@ -1,24 +1,13 @@
-# backend/app/routes.py
+from flask import Blueprint, jsonify, request
+from app.prediction import predict_student
 
-from flask import jsonify, request
-from backend.app import app
+api = Blueprint('api', __name__)
 
-@app.route('/api/analise', methods=['POST'])
-def realizar_analise():
-    # Recebe os dados do frontend
-    dados = request.json
+@api.route('/predict', methods=['POST'])
+def make_prediction():
+    form_data = request.json
     
-    # Realiza a lógica da análise dos dados
-    # Neste exemplo, estamos apenas retornando os valores fixos de aprovação e reprovação
-    if algum_criterio_de_aprovacao():
-        resposta = {
-            "status": "Aprovado",
-            "certeza": 87
-        }
-    else:
-        resposta = {
-            "status": "Reprovado",
-            "certeza": 90.05
-        }
+    # Chama a função predict_student para obter o resultado da previsão
+    result = predict_student(form_data)
     
-    return jsonify(resposta)
+    return jsonify({'result': result})

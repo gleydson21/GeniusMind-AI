@@ -1,12 +1,14 @@
 - backend/
-    - app/
+    - app/..................Pasta contendo os arquivos relacionados à aplicação
         - __init__.py
-        - routes.py
-        - models.py (se houverem modelos definidos)
-    - config/
+        - routes.py.........Arquivo para definir as rotas da sua aplicação
+        - prediction.py.....Arquivo com a função de previsão do aluno
+    - config/...............Pasta contendo os arquivos de configuração
         - __init__.py
-        - config.py
-    - main.py
+        - config.py.........Arquivo de configuração da aplicação, se necessário
+    - data/.................Pasta para armazenar os arquivos de dados
+        - modelo.pkl........Arquivo modelo.pkl gerado pela sua IA
+    - main.py...............Arquivo principal para iniciar a aplicação Flask
 - frontend/
     - css/
         - style.css
