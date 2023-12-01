@@ -1,5 +1,5 @@
 // Função para obter as postagens
-export function getPosts() {
+/*export function getPosts() {
     return fetch('https://api.example.com/posts')
       .then(response => {
         if (!response.ok) {
@@ -40,4 +40,18 @@ export function getPosts() {
         console.error(error);
         return null;
       });
-  }
+  }*/
+
+// Pegando os dados do formulário
+const form = document.querySelector('form');
+
+form.addEventListener('submit', evento => {
+  evento.preventDefault();
+
+  const formData = new FormData(form)
+  const data = Object.fromEntries(formData);
+
+  console.log(data)
+});
+
+console.log(form)

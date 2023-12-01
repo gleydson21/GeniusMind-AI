@@ -1,5 +1,5 @@
 // Função para obter os dados de um usuário
-export function getUserData(userId) {
+/*export function getUserData(userId) {
     return fetch(`https://api.example.com/users/${userId}`)
       .then(response => {
         if (!response.ok) {
@@ -40,4 +40,4 @@ export function getUserData(userId) {
         console.error(error);
         return null;
       });
-  }
+  }*/

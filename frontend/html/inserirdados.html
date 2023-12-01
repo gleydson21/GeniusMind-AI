@@ -30,11 +30,11 @@
         </header>
 
 
-        <form class="form">
+        <form action="" class="form">
             <h1>Formulário</h1>
             <div class="form-group">
                 <label for="idade">Qual a sua idade? 1: (18-21), 2: (22-25), 3: (acima de 26)</label>
-                <select class="form-control" id="idade">
+                <select class="form-control" name="idade" id="idade">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -43,7 +43,7 @@
             </div>
             <div class="form-group">
                 <label for="sexo">Qual o seu sexo? (1: feminino, 2: masculino)</label>
-                <select class="form-control" id="sexo">
+                <select class="form-control" name="sexo" id="sexo">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -52,7 +52,7 @@
             </div>
             <div class="form-group">
                 <label for="escolaridade">Qual o tipo de ensino médio? (1: particular, 2 - estadual, 3 - outro)</label>
-                <select class="form-control" id="escolaridade">
+                <select class="form-control" name="escolaridade" id="escolaridade">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -61,7 +61,7 @@
             </div>
             <div class="form-group">
                 <label for="bolsa">Qual o tipo de bolsa? (1: particular, 2: estadual, 3: outro)</label>
-                <select class="form-control" id="bolsa">
+                <select class="form-control" name="bolsa" id="bolsa">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -72,7 +72,7 @@
             </div>
             <div class="form-group">
                 <label for="trabalho-adicional">Você tem um trabalho adicional? (1: Sim, 2: Não)</label>
-                <select class="form-control" id="trabalho-adicional">
+                <select class="form-control" name="trabalho-adicional" id="trabalho-adicional">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -82,7 +82,7 @@
             <div class="form-group">
                 <label for="horas-estudadas">Quantas horas você estuda semanalmente? (1: Nenhuma, 2: menos de 5 horas, 3: 6-10
                     horas, 4: 11-20 horas, 5: mais de 20 horas)</label>
-                <select class="form-control" id="horas-estudadas">
+                <select class="form-control" name="horas-estudadas" id="horas-estudadas">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -93,7 +93,7 @@
             </div>
             <div class="form-group">
                 <label for="impactos-atividades">Qual o impacto dos seus projetos/atividades no seu sucesso? (1: positivo, 2: negativo, 3: neutro)</label>
-                <select class="form-control" id="impactos-atividades">
+                <select class="form-control" name="impactos-atividades" id="impactos-atividades">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -102,7 +102,7 @@
             </div>
             <div class="form-group">
                 <label for="frequencia-aulas">Sua frequência nas aulas? (1: sempre, 2: às vezes, 3: nunca)</label>
-                <select class="form-control" id="frequencia-aulas">
+                <select class="form-control" name="frequencia-aulas" id="frequencia-aulas">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -111,7 +111,7 @@
             </div>
             <div class="form-group">
                 <label for="discussao">A discussão melhora meu interesse e sucesso no curso? (1: nunca, 2: às vezes, 3: sempre)</label>
-                <select class="form-control" id="discussao">
+                <select class="form-control" name="discussao" id="discussao">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -121,7 +121,7 @@
             <div class="form-group">
                 <label for="media">Média acumulada de notas no último semestre (/4,00)? (1: menor que 2.00, 2: 2.00-2.49, 3: 2.50-2.99, 4: 3.00-3.49, 5: acima de 3.49)
                 </label>
-                <select class="form-control" id="media">
+                <select class="form-control" name="media" id="media">
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -130,7 +130,7 @@
                     <option value="5">5</option>
                 </select>
             </div>
-            <button type="button" class="button-red"><a href="#">Enviar dados</a></button>
+            <button type="submit" class="button-red">Enviar dados</button>
         </form>
 
 
@@ -161,6 +161,12 @@
            <p>&copy; 2022 RJGM - Tecnologia. Todos os direitos reservados.</p>
        </div>
    </footer> 
+
+
+
+   <script src="../js/api/postApi.js"></script>
+   <script src="../js/api/userApi.js"></script>
+   <script src="../js/main.js"></script>
 </body>
 
 </html>
