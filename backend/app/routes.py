@@ -1,13 +1,11 @@
-from flask import Blueprint, jsonify, request
-from app.prediction import predict_student
+from flask import Blueprint, jsonify
 
 api = Blueprint('api', __name__)
 
-@api.route('/predict', methods=['POST'])
-def make_prediction():
-    form_data = request.json
-    
-    # Chama a função predict_student para obter o resultado da previsão
-    result = predict_student(form_data)
-    
-    return jsonify({'result': result})
+@api.route('/')
+def index():
+    return jsonify({'message': 'Tabacudo!'})
+
+@api.route('/hello/<name>')
+def hello(name):
+    return jsonify({'message': f'Olá, {name}!'})
