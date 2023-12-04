@@ -49,9 +49,16 @@ form.addEventListener('submit', evento => {
   evento.preventDefault();
 
   const formData = new FormData(form)
-  const data = Object.fromEntries(formData);
+  const dadosFormulario = Object.fromEntries(formData);
 
-  console.log(data)
+  fetch('http://127.0.0.1:5000/main.py', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dadosFormulario)
+  }).then(res => res.json())
+    .then(data => {
+      console.log(data);
+    })
 });
-
-console.log(form)
