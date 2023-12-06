@@ -51,7 +51,7 @@ form.addEventListener('submit', evento => {
   const formData = new FormData(form)
   const dadosFormulario = Object.fromEntries(formData);
 
-  fetch('http://127.0.0.1:5000/main.py', {
+   fetch('http://127.0.0.1:5000/main.py', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -62,3 +62,23 @@ form.addEventListener('submit', evento => {
       console.log(data);
     })
 });
+
+// // Função para obter os dados do arquivo .h5
+// const form = document.querySelector('form');
+
+// form.addEventListener('submit', evento => {
+//   evento.preventDefault();
+
+//   fetch('http://127.0.0.1:5000/main.py', {
+//     method: 'POST',
+//     // Não é necessário definir o cabeçalho Content-Type ou o corpo para solicitações GET
+//   })
+//     .then(res => res.json())
+//     .then(data => {
+//       console.log(data);
+//       // Manipule os dados recebidos do servidor (dados.dados contém os dados do arquivo .h5)
+//     })
+//     .catch(error => {
+//       console.error('Erro na solicitação:', error);
+//     });
+// });
