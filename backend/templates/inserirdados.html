@@ -23,18 +23,18 @@
             <a href="#"><img src="../img/logo lamp.png" alt="" class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     
                 </ul>
             </nav>
         </header>
 
 
-        <form action="" class="form">
+        <form id="meuFormulario" method="POST" action="/predict" onsubmit="enviarDados(event)">
             <h1>Formulário</h1>
             <div class="form-group">
                 <label for="idade">Qual a sua idade? 1: (18-21), 2: (22-25), 3: (acima de 26)</label>
-                <select class="form-control" name="idade" id="idade">
+                <select class="form-control" name="idade" id="idade" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -43,16 +43,15 @@
             </div>
             <div class="form-group">
                 <label for="sexo">Qual o seu sexo? (1: feminino, 2: masculino)</label>
-                <select class="form-control" name="sexo" id="sexo">
+                <select class="form-control" name="sexo" id="sexo" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
-
                 </select>
             </div>
             <div class="form-group">
                 <label for="escolaridade">Qual o tipo de ensino médio? (1: particular, 2 - estadual, 3 - outro)</label>
-                <select class="form-control" name="escolaridade" id="escolaridade">
+                <select class="form-control" name="escolaridade" id="escolaridade" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -61,7 +60,7 @@
             </div>
             <div class="form-group">
                 <label for="bolsa">Qual o tipo de bolsa? (1: particular, 2: estadual, 3: outro)</label>
-                <select class="form-control" name="bolsa" id="bolsa">
+                <select class="form-control" name="bolsa" id="bolsa" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -72,17 +71,15 @@
             </div>
             <div class="form-group">
                 <label for="trabalho-adicional">Você tem um trabalho adicional? (1: Sim, 2: Não)</label>
-                <select class="form-control" name="trabalho-adicional" id="trabalho-adicional">
+                <select class="form-control" name="trabalho-adicional" id="trabalho-adicional" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
-
                 </select>
             </div>
             <div class="form-group">
-                <label for="horas-estudadas">Quantas horas você estuda semanalmente? (1: Nenhuma, 2: menos de 5 horas, 3: 6-10
-                    horas, 4: 11-20 horas, 5: mais de 20 horas)</label>
-                <select class="form-control" name="horas-estudadas" id="horas-estudadas">
+                <label for="horas-estudadas">Quantas horas você estudou? </label>
+                <select class="form-control" name="horas-estudadas" id="horas-estudadas" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -93,7 +90,7 @@
             </div>
             <div class="form-group">
                 <label for="impactos-atividades">Qual o impacto dos seus projetos/atividades no seu sucesso? (1: positivo, 2: negativo, 3: neutro)</label>
-                <select class="form-control" name="impactos-atividades" id="impactos-atividades">
+                <select class="form-control" name="impactos-atividades" id="impactos-atividades" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -102,7 +99,7 @@
             </div>
             <div class="form-group">
                 <label for="frequencia-aulas">Sua frequência nas aulas? (1: sempre, 2: às vezes, 3: nunca)</label>
-                <select class="form-control" name="frequencia-aulas" id="frequencia-aulas">
+                <select class="form-control" name="frequencia-aulas" id="frequencia-aulas" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -111,7 +108,7 @@
             </div>
             <div class="form-group">
                 <label for="discussao">A discussão melhora meu interesse e sucesso no curso? (1: nunca, 2: às vezes, 3: sempre)</label>
-                <select class="form-control" name="discussao" id="discussao">
+                <select class="form-control" name="discussao" id="discussao" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -119,9 +116,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="media">Média acumulada de notas no último semestre (/4,00)? (1: menor que 2.00, 2: 2.00-2.49, 3: 2.50-2.99, 4: 3.00-3.49, 5: acima de 3.49)
-                </label>
-                <select class="form-control" name="media" id="media">
+                <label for="media">Média acumulada de notas no último semestre (/4,00)? (1: menor que 2.00, 2: 2.00-2.49, 3: 2.50-2.99, 4: 3.00-3.49, 5: acima de 3.49)</label>
+                <select class="form-control" name="media" id="media" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -132,17 +128,17 @@
             </div>
             <div class="form-group">
                 <label for="Id-Curso">Qual o ID do curso?</label>
-                <select class="form-control" name="Id-Curso" id="Id-Curso">
+                <select class="form-control" name="Id-Curso" id="Id-Curso" required>
                     <option disabled selected>Escolha uma das opções...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
-                    <option value="3">6</option>
-                    <option value="4">7</option>
-                    <option value="5">8</option>
-                    <option value="5">9</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
                 </select>
             </div>
             <button type="submit" class="button-red">Enviar dados</button>
@@ -177,11 +173,52 @@
        </div>
    </footer> 
 
+   <script>
+    function enviarDados(event) {
+        event.preventDefault(); // Impede o recarregamento da página
+
+        var xhr = new XMLHttpRequest();
+        var url = "/predict"; // Atualize a rota para a rota do seu Flask
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var resposta = JSON.parse(xhr.responseText);
+                alert("Resultado: " + resposta.resultado);
+            }
+        };
+
+        var idade = document.getElementById('idade').value;
+        var sexo = document.getElementById('sexo').value;
+        var escolaridade = document.getElementById('escolaridade').value;
+        var bolsa = document.getElementById('bolsa').value;
+        var trabalho_adicional = document.getElementById('trabalho-adicional').value;
+        var horas_estudadas = document.getElementById('horas-estudadas').value;
+        var impactos_atividades = document.getElementById('impactos-atividades').value;
+        var frequencia_aulas = document.getElementById('frequencia-aulas').value;
+        var discussao = document.getElementById('discussao').value;
+        var media = document.getElementById('media').value;
+        var id_curso = document.getElementById('Id-Curso').value;
+
+        console.log("Enviando:", idade, sexo, escolaridade, bolsa, trabalho_adicional, horas_estudadas, impactos_atividades, frequencia_aulas, discussao, media, id_curso); // Para depuração
+
+        var data = 'idade=' + encodeURIComponent(idade) +
+                   '&sexo=' + encodeURIComponent(sexo) +
+                   '&escolaridade=' + encodeURIComponent(escolaridade) +
+                   '&bolsa=' + encodeURIComponent(bolsa) +
+                   '&trabalho-adicional=' + encodeURIComponent(trabalho_adicional) +
+                   '&horas-estudadas=' + encodeURIComponent(horas_estudadas) +
+                   '&impactos-atividades=' + encodeURIComponent(impactos_atividades) +
+                   '&frequencia-aulas=' + encodeURIComponent(frequencia_aulas) +
+                   '&discussao=' + encodeURIComponent(discussao) +
+                   '&media=' + encodeURIComponent(media) +
+                   '&Id-Curso=' + encodeURIComponent(id_curso);
+        xhr.send(data);
+    }
+</script>
 
 
-   <script src="../js/api/postApi.js"></script>
-   <script src="../js/api/userApi.js"></script>
-   <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+from flask import Flask, request
 import tensorflow as tf
 
 def load_model():
@@ -27,3 +28,5 @@ def predict_student(input_data):
             return 'Reprovado'
     else:
         return 'Não foi possível carregar o modelo'
+    
+  

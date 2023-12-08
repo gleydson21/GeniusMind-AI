@@ -1,28 +1,25 @@
 - backend/
     - app/..................Pasta contendo os arquivos relacionados à aplicação
-        - __init__.py
         - routes.py.........Arquivo para definir as rotas da sua aplicação
         - prediction.py.....Arquivo com a função de previsão do aluno
-    - config/...............Pasta contendo os arquivos de configuração
-        - __init__.py
-        - config.py.........Arquivo de configuração da aplicação, se necessário
     - data/.................Pasta para armazenar os arquivos de dados
-        - modelo.pkl........Arquivo modelo.pkl gerado pela sua IA
+        - modelo_arvore_decisao.pkl
+        - modelo_XGBC.h5........Arquivo modelo_XGBC.h5 gerado pela sua IA
+        - modelo_XGBC.pkl
     - main.py...............Arquivo principal para iniciar a aplicação Flask
 - frontend/
     - css/
         - style.css
+    -html/
+        -ajuda.html
+        -inserirdados.html
+        -index.html
     - img/
         - download-removebg-preview.png
         - estudantes-dos-desenhos-animados-adolescente-casal-com-mochilas-e-livros-700-76285323-removebg-preview.png
         - logo_lamp.png
         - png-clipart-graphics-computer-student-computer-child-computer-removebg-preview.png
         - universidade-tiradentes-logo-removebg-preview.png
-    - js/
-        - api/
-            - userApi.js
-            - postApi.js
-        - components/
-            
+    - js/ 
         - main.js
-- index.html
+
