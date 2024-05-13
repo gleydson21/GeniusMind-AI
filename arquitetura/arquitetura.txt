@@ -4,7 +4,7 @@
         - prediction.py.....Arquivo com a função de previsão do aluno
     - data/.................Pasta para armazenar os arquivos de dados
         - modelo_arvore_decisao.pkl
-        - modelo_XGBC.h5........Arquivo modelo_XGBC.h5 gerado pela sua IA
+        - modelo_XGBC.h5........Arquivo modelo_XGBC.h5 
         - modelo_XGBC.pkl
     - main.py...............Arquivo principal para iniciar a aplicação Flask
 - frontend/
