@@ -185,7 +185,11 @@
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 var resposta = JSON.parse(xhr.responseText);
-                alert("Predição do Modelo: " + resposta.prediction); 
+                var status = resposta.prediction === 1 ? "Aprovado" : "Reprovado";
+                
+                alert("Previsão: " + status );
+
+                
             }
         };
 
